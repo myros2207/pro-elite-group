@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pro-elit-group/static/css/main.7f1644a4.css",
+    "main.js": "/pro-elit-group/static/js/main.02c4d1e0.js",
+    "static/media/Group.png": "/pro-elit-group/static/media/Group.d209202b23875e274112.png",
+    "index.html": "/pro-elit-group/index.html",
+    "main.7f1644a4.css.map": "/pro-elit-group/static/css/main.7f1644a4.css.map",
+    "main.02c4d1e0.js.map": "/pro-elit-group/static/js/main.02c4d1e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1644a4.css",
+    "static/js/main.02c4d1e0.js"
+  ]
+}

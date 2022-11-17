@@ -213,14 +213,14 @@ import {
   MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
+  Stack, Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 //@ts-ignore  
 import {Link} from 'react-scroll'
 
 
-const Links = ['Home', 'Portfolio', 'Team'];
+const Links = ['Home', 'Portfolio', 'Contact'];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -241,12 +241,14 @@ const NavLink = ({ children }: { children: ReactNode }) => (
   </Link>
 );
 
+
+const logo = require("../../IMG/Group.png")
 const NavbarComponent = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Box position={"fixed"} mt={"-10vh"} w="100vw" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box position={"fixed"}  w="100vw" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -256,7 +258,8 @@ const NavbarComponent = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>Logo</Box>
+            <Box><Image w={"10rem"} src={logo}/></Box>
+
             <HStack
               as={'nav'}
               spacing={4}
